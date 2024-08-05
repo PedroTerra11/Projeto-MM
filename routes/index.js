@@ -6,7 +6,7 @@ const db = require("../db");
 router.get('/', async function(req, res, next) {
   try {
     const resultado = await db.find(); 
-    res.render('index', { title: 'Mercado Móveis', resultado: resultado });
+    res.render('index', { title: 'Cadastramento de usuário', resultado: resultado });
   } catch (err) {
     next(err);
   }
